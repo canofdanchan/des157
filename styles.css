@@ -1,0 +1,70 @@
+body{
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  color: #666666;
+  font-size: 1em;
+}
+div {
+  width:90%;
+  max-width: 810px;
+  margin: auto;
+}
+#my-sketch {
+  width: 800px;
+  height: 250px;
+  /* border: solid #af87e7 3px; */
+}
+section {
+  float: left;
+  width: 50%;
+  margin: auto;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+ol {
+  list-style:decimal;
+}
+ul {
+  list-style:circle;
+}
+ol, ul {
+  list-style-position: outside;
+  padding: 0;
+}
+li {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+footer {
+  clear: both;
+  height: 25px;
+  bottom: 2%;
+  position: fixed;
+}
+a:link, a:visited {
+  color: #666666;
+  text-decoration: none;
+}
+a:hover {
+  color: #af87e7;
+}
+/* typography */
+h1 {
+  font-weight: 800;
+  font-size: 2em;
+  margin-top: 10%;
+}
+span {
+  font-weight: 400;
+  font-size: 0.65em;
+}
+h2 {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-top: 5%;
+}
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #af87e7;
+  margin-bottom: 2%;
+}
