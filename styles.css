@@ -6,7 +6,7 @@ body{
 }
 div {
   width:90%;
-  max-width: 810px;
+  max-width: 800px;
   margin: auto;
 }
 #my-sketch {
@@ -40,6 +40,7 @@ footer {
   height: 25px;
   bottom: 2%;
   position: fixed;
+  background-color: white;
 }
 a:link, a:visited {
   color: #666666;
@@ -47,6 +48,10 @@ a:link, a:visited {
 }
 a:hover {
   color: #af87e7;
+}
+img {
+  width: 100%;
+  margin-bottom: 5%;
 }
 /* typography */
 h1 {

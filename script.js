@@ -10,5 +10,4 @@ function draw(){
   stroke (175, 135, 231);
   strokeWeight(3);
   line (mouseX,mouseY,pmouseX,pmouseY);
-
 }
