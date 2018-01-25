@@ -21,33 +21,14 @@ section {
   box-sizing: border-box;
   margin-bottom: 30px;
 }
-ol {
-  list-style:decimal;
-}
-ul {
-  list-style:circle;
-}
-ol, ul {
-  list-style-position: outside;
-  padding: 0;
-}
-li {
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
 footer {
   clear: both;
   height: 25px;
   bottom: 2%;
   position: fixed;
   background-color: white;
-}
-a:link, a:visited {
-  color: #666666;
-  text-decoration: none;
-}
-a:hover {
-  color: #af87e7;
+  padding: 0.3%;
+  margin-top: 3%;
 }
 img {
   width: 100%;
@@ -71,5 +52,31 @@ h2 {
 h1, h2 {
   font-family: "Montserrat", sans-serif;
   color: #af87e7;
+  margin-bottom: 2%;
+}
+p {
+  margin-bottom: 6%;
+  line-height: 180%;
+  font-size: 1.05em;
+}
+a:link, a:visited {
+  color: #666666;
+  text-decoration: none;
+}
+a:hover {
+  color: #af87e7;
+}
+ol {
+  list-style:decimal;
+}
+ul {
+  list-style:circle;
+}
+ol, ul {
+  list-style-position: outside;
+  padding: 0;
+}
+li {
+  margin-top: 2%;
   margin-bottom: 2%;
 }
