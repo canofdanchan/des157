@@ -115,15 +115,15 @@ p {
 
 @media screen and (min-width: 769px) {
   #laptopOverlay p {
-      top: 75%;
+      top: 80%;
   }
 
   #phoneOverlay p {
-      top: 65%;
+      top: 70%;
   }
 
   #penOverlay p {
-      top: 75%;
+      top: 80%;
   }
   footer {
     left: 40%;
