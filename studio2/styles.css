@@ -1,6 +1,7 @@
+* {
+  box-sizing: border-box;
+}
 body {
-  padding: 8%;
-  padding-top: 2.5%;
   font-family: "Inconsolata", sans-serif;
 }
 
@@ -114,6 +115,9 @@ p {
 }
 
 @media screen and (min-width: 769px) {
+  body {
+    padding: none;
+  }
   #laptopOverlay p {
       top: 80%;
   }
@@ -134,5 +138,11 @@ p {
   p {
     font-size: 1em;
     max-width: 500px;
+  }
+}
+@media screen and (max-width: 769px) {
+  body {
+    padding: 8%;
+    padding-top: 2%;
   }
 }
