@@ -28,7 +28,6 @@ footer {
   position: fixed;
   background-color: white;
   padding: 0.3%;
-  margin-top: 3%;
 }
 img {
   width: 100%;
@@ -55,9 +54,11 @@ h1, h2 {
   margin-bottom: 2%;
 }
 p {
-  margin-bottom: 6%;
   line-height: 180%;
   font-size: 1.05em;
+}
+p:last-child {
+    margin-bottom: 6%;
 }
 a:link, a:visited {
   color: #666666;
@@ -75,6 +76,7 @@ ul {
 ol, ul {
   list-style-position: outside;
   padding: 0;
+  margin-bottom: 6%;
 }
 li {
   margin-top: 3%;
