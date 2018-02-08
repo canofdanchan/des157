@@ -116,7 +116,7 @@ p {
 
 @media screen and (min-width: 769px) {
   body {
-    padding: none;
+    padding: 0;
   }
   #laptopOverlay p {
       top: 80%;
