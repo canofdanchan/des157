@@ -1,0 +1,75 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  color: #666666;
+  font-size: 1em;
+}
+div {
+  width:90%;
+  max-width: 800px;
+  margin: auto;
+}
+section {
+  clear: both;
+}
+footer {
+  clear: both;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  padding: 0.3%;
+}
+img {
+  width: 30%;
+  float: left;
+}
+/* typography */
+h1 {
+  font-weight: 800;
+  font-size: 2em;
+  margin-top: 10%;
+}
+h2 {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-top: 5%;
+}
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #af87e7;
+  margin-bottom: 2%;
+}
+span {
+  font-weight: 600;
+  color: #af87e7
+}
+p {
+  line-height: 180%;
+  font-size: 1.05em;
+}
+p:last-child {
+    margin-bottom: 6%;
+}
+a:link, a:visited {
+  color: #666666;
+  text-decoration: none;
+}
+a:hover {
+  color: #af87e7;
+}
+ul {
+  width: 70%;
+  float: left;
+  list-style: circle;
+  list-style-position: outside;
+}
+li {
+  line-height: 170%;
+  font-size: 1.2em;
+}
+li:last-child{
+  margin-bottom: 10%;
+}
