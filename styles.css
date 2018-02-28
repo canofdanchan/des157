@@ -21,6 +21,9 @@ section {
   box-sizing: border-box;
   margin-bottom: 30px;
 }
+article {
+  margin-bottom: 8%;
+}
 footer {
   clear: both;
   bottom: 1%;
@@ -29,7 +32,8 @@ footer {
 }
 img {
   width: 100%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
+  margin-top: 2%;
 }
 /* typography */
 h1 {
