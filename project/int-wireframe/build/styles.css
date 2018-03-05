@@ -1,0 +1,56 @@
+#backButton, #nextButton {
+  font-size: 2em;
+  font-weight: 700;
+  padding-top: 0.1%;
+  padding-bottom: 0.1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 10px;
+  position: absolute;
+}
+#backButton {
+  left: 17%;
+  bottom: 16%;
+}
+#nextButton {
+  right: 17%;
+  bottom: 16%;
+}
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+label {
+  bottom: 20%;
+  font-size: 1.5em;
+  color: gray;
+}
+input {
+  font-family: Inconsolata;
+  bottom: 12%;
+  width: 40%;
+  outline: none;
+  padding: 1%;
+}
+label, input {
+  left: 30%;
+  position: absolute;
+}
+/*animated*/
+img {
+  max-width: 650px;
+  opacity: 0;
+  position: absolute;
+}
+#b1full, #b2full, #b3full, #b4full, #b5full {
+  opacity: 0;
+}
+/*animations*/
+.show {
+  opacity: 1;
+  transition: all 1s;
+}
+.hide {
+  opacity: 0;
+  transition: all 1s;
+}

@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Inconsolata, sans-serif;
+  letter-spacing: 2px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+nav {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+div {
+  max-width: 700px;
+  margin: auto;
+}
+hr {
+  display: block;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer {
+  margin: auto;
+  position: fixed;
+  bottom: 5%;
+  left: 35%;
+}
+footer a {
+  font-size: 1.5em;
+}
+footer span {
+  font-size: 0.6em;
+  color: lightgray;
+  opacity: 1;
+}
+/* section {
+  width: 50%;
+  float: left;
+} */
+/* button */
+button {
+  border: none;
+  background-color: #e8e8e8;
+  color: gray;
+  box-shadow: 0px 6px #a3a3a3;
+  outline: none;
+}
+header button, section button {
+  font-size: 1.2em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+button:hover, button:active {
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+button:active {
+  box-shadow: 0px 3px #707070;
+  transform: translateY(3px);
+}
+/*typography*/
+h1 {
+  margin-top: 15%;
+  font-size: 2em;
+}
+h2 {
+  color: darkgray;
+  font-size: 1.5em;
+}
+h1, h2 {
+  text-align: center;
+}
+h3 {
+  position: absolute;
+  top: 3%;
+  width: 40%;
+  left: 30%;
+  right: 30%;
+  font-weight: 400;
+}
+p {
+  color: gray;
+  margin-bottom: 4%;
+  letter-spacing: 1px;
+}
+li {
+  list-style: none;
+  margin-bottom: 8%;
+  font-size: 1.2em;
+  position: relative;
+}
+a, a:visited{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: gray;
+}
+button a, button a:visited, button a:hover {
+  color: gray;
+}
+#home, #home:visited, #home:hover, #about, #about:visited, #about:hover{
+  font-weight: 700;
+  color: black;
+  text-decoration: underline;
+}
+/*animated*/
+span {
+  color: gray;
+  opacity: 0;
+  position: relative;
+}
+/*animations*/
+@keyframes floatup {
+  from {bottom: -100px; opacity: 0;}
+  to {bottom: 0px; opacity: 1;}
+}
+.animateDescrip {
+  animation-name: floatup;
+  animation-duration: 2s;
+  opacity: 1;
+}
