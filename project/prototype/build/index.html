@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/normalize.css@7.0.0/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js">
+    </script>
+
+    <title> Build </title>
+</head>
+
+<body>
+    <div id=bigDiv>
+        <nav>
+            <a href="../index.html">HOME</a> |
+            <a href="../about.html">ABOUT</a>
+        </nav>
+
+        <article>
+            <img id="housefl" src="images/house5.svg" alt="pink floor of birdhouse">
+            <img id="houseb" src="images/house4.svg" alt="pink back of birdhouse">
+            <img id="houses" src="images/house3.svg" alt="pink side of birdhouse">
+            <img id="houser" src="images/house1.svg" alt="pink rooftop of birdhouse">
+            <img id="housefr" src="images/house2.svg" alt="pink front of birdhouse">
+        </article>
+
+        <article>
+          <h3> <a href="">&#9432;</a> What do i do?</h3>
+            <form name="f">
+                <section id="b1full" class="hide">
+                    <label for="b1"> What is most important to build for you? </label>
+                    <textarea name="b1" id="b1" cols="50" rows="10" placeholder="type your answer here..."></textarea>
+                </section>
+
+                <section id="b2full" class="hide">
+                    <label for="b2"> What tools do you build with? </label>
+                    <textarea name="b2" id="b2" cols="50" rows="10" placeholder="type your answer here..."></textarea>
+                </section>
+
+                <section id="b3full" class="hide">
+                    <label for="b3"> Why are you building these things? </label>
+                    <textarea name="b3" id="b3" cols="50" rows="10" placeholder="type your answer here..."></textarea>
+                </section>
+
+                <section id="b4full" class="hide">
+                    <label for="b4"> What do you still need to build? </label>
+                    <textarea name="b4" id="b4" cols="50" rows="10" placeholder="type your answer here..."></textarea>
+                </section>
+
+                <section id="b5full" class="hide">
+                    <label for="b5"> What do you need help building? </label>
+                    <textarea name="b5" id="b5" cols="50" rows="10" placeholder="type your answer here..."></textarea>
+                </section>
+            </form>
+            <button id="backButton" type="button">&#8592;</button>
+            <button id="nextButton" type="button">&#8594;</button>
+        </article>
+
+        <footer>
+            <span> <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a> |
+      <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a> | <a href="https://www.w3schools.com/css/css3_animations.asp">CSS Animations</a></span>
+        </footer>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
