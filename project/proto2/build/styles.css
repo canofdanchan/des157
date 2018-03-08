@@ -1,0 +1,60 @@
+article {
+  width: 50%;
+}
+form {
+  margin-top: 10%;
+}
+#backButton, #nextButton {
+  font-size: 2em;
+  font-weight: 700;
+  padding-top: 0.1%;
+  padding-bottom: 0.1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 38%;
+}
+#backButton{
+}
+#nextButton{
+right: 20%;
+}
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+label {
+  font-size: 1.3em;
+  color: gray;
+}
+textarea {
+  font-family: Inconsolata;
+  outline: none;
+  padding: 1%;
+  margin-top: 4%;
+}
+/*animated*/
+img {
+  max-width: 650px;
+  opacity: 0;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+/*animations*/
+.show {
+  opacity: 1;
+  transition: all 1s;
+}
+.hide {
+  opacity: 0;
+  transition: all 1s;
+}
+.none {
+  display: none;
+}
+/* typography */
+h3 {
+  font-weight: 400;
+}
