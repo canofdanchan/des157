@@ -83,12 +83,12 @@ function next() {
         // if it reaches the end, the next button disappears & submit button appears
         // problem: next button doesn't show again?
         if (index == allHold.length - 1) {
-            // nextButton.className="hide";
+            nextButton.className="hide";
             submitButton.className = "showButton";
         }
-        // else if (index < allHold.length-1){
-        //   nextButton.className="show";
-        // }
+        else if (index < allHold.length-1){
+          nextButton.className="show";
+        }
     }
     console.log(index);
 }
@@ -101,6 +101,10 @@ function prev() {
         index--;
         allQuestion[index + 1].className = "hide";
         allQuestion[index].className = "animate";
+
+        if (index < allHold.length-1){
+          nextButton.className="show";
+        }
     }
     console.log(index);
 }
@@ -132,4 +136,5 @@ function processForm() {
 function gobackfunction() {
     form.className = "show";
     results.className = "hide";
+    index=allHold.length-1;
 }

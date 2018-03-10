@@ -46,11 +46,11 @@ var allQuestion = [b1full, b2full, b3full, b4full, b5full];
 var index = 0;
 
 // overlay functions
-infoIcon.addEventListener ("click", function(){
-  infoOverlay.style.display="block";
+infoIcon.addEventListener("click", function() {
+    infoOverlay.style.display = "block";
 });
-close.addEventListener("click", function(){
-  infoOverlay.style.display="none";
+close.addEventListener("click", function() {
+    infoOverlay.style.display = "none";
 })
 
 // roof appears when the window loads
@@ -58,7 +58,7 @@ window.addEventListener('load', function() {
     console.log("on load");
     timeId = setTimeout(showRoof, 0);
     showb1();
-    backButton.className="hide";
+    backButton.className = "hide";
 });
 
 //separate function to make the roof appear
@@ -74,23 +74,22 @@ function showb1() {
 
 // functions for next button -- for image to appear
 function next() {
-  //if i'm not at the end, the next item appears (if I am at the end, nothing happens)
-    if (index < allHouse.length-1) {
+    //if i'm not at the end, the next item appears (if I am at the end, nothing happens)
+    if (index < allHouse.length - 1) {
         index++;
-        backButton.className="showButton";
+        backButton.className = "showButton";
         allHouse[index].className = "animate";
         allQuestion[index - 1].className = "hide";
         allQuestion[index].className = "animate";
 
         // if it reaches the end, the next button disappears & submit button appears
         // problem: next button doesn't show again?
-        if (index == allHouse.length-1) {
-          // nextButton.className="hide";
-          submitButton.className="showButton";
+        if (index == allHouse.length - 1) {
+            nextButton.className = "hide";
+            submitButton.className = "showButton";
+        } else if (index < allHouse.length - 1) {
+            nextButton.className = "show";
         }
-        // else if (index < allHouse.length-1){
-        //   nextButton.className="show";
-        // }
     }
     console.log(index);
 }
@@ -98,13 +97,17 @@ function next() {
 // functions for back button -- for image to disappear & go to previous image
 function prev() {
 
-    if (index > 0){
-    allHouse[index].className = "unanimate";
-    index--;
-    allQuestion[index + 1].className = "hide";
-    allQuestion[index].className = "animate";
-  }
-  console.log(index);
+    if (index > 0) {
+        allHouse[index].className = "unanimate";
+        index--;
+        allQuestion[index + 1].className = "hide";
+        allQuestion[index].className = "animate";
+
+        if (index < allHouse.length - 1) {
+            nextButton.className = "show";
+        }
+    }
+    console.log(index);
 }
 
 //attaching event listeners to buttons and adding functions
@@ -118,21 +121,22 @@ goback.addEventListener("click", gobackfunction);
 
 function processForm() {
 
-  form.className="hide";
+    form.className = "hide";
 
-  var b1 = document.f.b1.value;
-  var b2 = document.f.b2.value;
-  var b3 = document.f.b3.value;
-  var b4 = document.f.b4.value;
-  var b5 = document.f.b5.value;
+    var b1 = document.f.b1.value;
+    var b2 = document.f.b2.value;
+    var b3 = document.f.b3.value;
+    var b4 = document.f.b4.value;
+    var b5 = document.f.b5.value;
 
-  answers.innerHTML = "<h3>What is most important to build for you?</h3><p>" + b1 + "</p><h3> What tools do you build with?</h3><p>" + b2 + "</p><h3>Why are you building these things?</h3><p>" + b3 + "</p><h3>What do you still need to build?</h3><p>" + b4 + "</p><h3>What do you need help building?</h3>" + b5;
+    answers.innerHTML = "<h3>What is most important to build for you?</h3><p>" + b1 + "</p><h3> What tools do you build with?</h3><p>" + b2 + "</p><h3>Why are you building these things?</h3><p>" + b3 + "</p><h3>What do you still need to build?</h3><p>" + b4 + "</p><h3>What do you need help building?</h3>" + b5;
 
-  results.className="show";
-  return false;
+    results.className = "show";
+    return false;
 }
 
 function gobackfunction() {
-    form.className="show";
-    results.className="hide";
+    form.className = "show";
+    results.className = "hide";
+    index = allHouse.length - 1;
 }

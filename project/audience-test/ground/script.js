@@ -33,7 +33,7 @@ var goback = document.getElementById("goback");
 var timerId;
 
 // create an array with all house elements: 0, 1, 2, 3
-var allHouse = [smoke1, smoke2, smoke3];
+var allSmoke = [smoke1, smoke2, smoke3];
 
 // create an array with all questions: 0, 1, 2, 3
 var allQuestion = [s1full, s2full, s3full];
@@ -71,22 +71,22 @@ function shows1() {
 // functions for next button -- for image to appear
 function next() {
   //if i'm not at the end, the next item appears (if I am at the end, nothing happens)
-    if (index < allHouse.length-1) {
+    if (index < allSmoke.length-1) {
         index++;
         backButton.className="showButton";
-        allHouse[index].className = "animate";
+        allSmoke[index].className = "animate";
         allQuestion[index - 1].className = "hide";
         allQuestion[index].className = "animate";
 
         // if it reaches the end, the next button disappears & submit button appears
         // problem: next button doesn't show again?
-        if (index == allHouse.length-1) {
-          // nextButton.className="hide";
+        if (index == allSmoke.length-1) {
+          nextButton.className="hide";
           submitButton.className="showButton";
         }
-        // else if (index < allHouse.length-1){
-        //   nextButton.className="show";
-        // }
+        else if (index < allSmoke.length-1){
+          nextButton.className="show";
+        }
     }
     console.log(index);
 }
@@ -95,10 +95,14 @@ function next() {
 function prev() {
 
     if (index > 0){
-    allHouse[index].className = "unanimate";
+    allSmoke[index].className = "unanimate";
     index--;
     allQuestion[index + 1].className = "hide";
     allQuestion[index].className = "animate";
+
+    if (index < allSmoke.length-1){
+      nextButton.className="show";
+    }
   }
   console.log(index);
 }
@@ -129,4 +133,5 @@ function processForm() {
 function gobackfunction() {
     form.className="show";
     results.className="hide";
+    index=allSmoke.length-1;
 }
