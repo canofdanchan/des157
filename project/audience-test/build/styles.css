@@ -3,10 +3,6 @@ article {
     margin-top: 10%;
 }
 
-form {
-    margin-top: 10%;
-}
-
 #backButton, #nextButton {
     font-family: sans-serif;
     font-size: 2em;
@@ -16,7 +12,7 @@ form {
     padding-left: 1%;
     padding-right: 1%;
     border-radius: 10px;
-    bottom: 35%;
+    bottom: 31%;
     position: absolute;
 }
 #nextButton {
@@ -35,6 +31,7 @@ button {
 label {
     font-size: 1.3em;
     color: gray;
+    display: block;
 }
 
 textarea {
@@ -46,6 +43,9 @@ textarea {
     width: 430px;
     display: block;
 }
+label, textarea {
+    width: 430px;
+}
 
 /*this class is specifically for the "submit" button*/
 
@@ -53,7 +53,7 @@ textarea {
     outline: none;
     display: block;
     position: absolute;
-    bottom: 25%;
+    bottom: 20%;
     background-color: #e8e8e8;
     color: gray;
     box-shadow: 0px 6px #a3a3a3;
@@ -78,7 +78,7 @@ textarea {
   transform: translate(-50%);
   display: none;
   background-color: white;
-  border: 1px #FCC0C0 solid;
+  border: 1px solid;
   padding: 2%;
   max-width: 500px;
 }
@@ -125,7 +125,6 @@ img {
 h3 {
     font-weight: 700;
     font-size: 1.3em;
-    color: #FCC0C0;
 }
 h3:first-child {
   margin-top: 10%;
@@ -164,7 +163,7 @@ li {
     position: absolute;
     top: 52%;
   }
-  #results {
+  form, #results {
     width: 570px;
   }
   #infoOverlay{
@@ -176,6 +175,9 @@ li {
   }
 }
 @media only screen and (max-width: 768px){
+  form, #results {
+    top: 60%;
+  }
   #backButton, #nextButton, .showButton{
     bottom: 10%;
   }
@@ -190,24 +192,24 @@ li {
   form, footer, h4 {
     left: 12%;
   }
-  section, article, textarea {
+  p, textarea, label {
     width: 300px;
   }
   form, #results {
-    top: 47%;
+    top: 53.5%;
   }
   label, h3 {
     font-size: 1.1em;
   }
   h4 {
-    top: 0.5%;
+    top: 3%;
   }
   #backButton, #nextButton{
     bottom: 8%;
   }
   .showButton {
     bottom: 0%;
-    left: 35%;
+    left: 20%;
   }
   #nextButton {
     right: 10%;

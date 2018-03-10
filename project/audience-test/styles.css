@@ -7,14 +7,20 @@ body {
   padding-left: 8%;
   padding-right: 8%;
 }
-#bigDiv, #smolDiv {
+.bigDiv, .smolDiv {
   margin: auto;
 }
-#bigDiv {
+.bigDiv {
   max-width: 800px;
 }
-#smolDiv{
+.smolDiv{
   max-width: 600px;
+}
+#resourcepage li {
+  margin-bottom: 3%;
+}
+#resourcepage li:last-child{
+  margin-bottom: 10%;
 }
 article {
   float: left;
@@ -37,7 +43,7 @@ nav {
 footer {
   position: fixed;
   bottom: 5%;
-  left: 40%;
+  left: 38%;
 }
 footer a {
   font-size: 1.5em;
@@ -80,6 +86,18 @@ header .button, article .button, li .button, section .button{
   margin-right: auto;
 }
 /*typography*/
+#homepage h1 {
+  color: #EFA5A5;
+}
+#aboutpage h1 {
+  color: #F7CC19;
+}
+#resourcepage h1, #resourcepage section a, #resourcepage section a:visited {
+  color: #A0ACD8;
+}
+#resourcepage section a:hover {
+  color: gray;
+}
 h1 {
   margin-top: 15%;
   font-size: 2em;

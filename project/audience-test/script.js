@@ -11,16 +11,8 @@ var bDescrip = document.getElementById("bDescrip");
 var hDescrip = document.getElementById("hDescrip");
 var gDescrip = document.getElementById("gDescrip");
 
-//fetching build elements
-var houser = document.getElementById("houser");
-var housefr = document.getElementById("housefr");
-var houses = document.getElementById("houses");
-var houseb = document.getElementById("houseb");
-var housefl = document.getElementById("housefl");
-
-//fetching buttons
-var backButton = document.getElementById("backButton");
-var nextButton = document.getElementById("nextButton");
+var aboutpage = document.getElementById("aboutpage");
+var resourcepage = document.getElementById("resourcepage");
 
 var timerId;
 
