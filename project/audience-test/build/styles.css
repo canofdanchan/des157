@@ -12,11 +12,16 @@ article {
     padding-left: 1%;
     padding-right: 1%;
     border-radius: 10px;
-    bottom: 31%;
+    bottom: 35%;
     position: absolute;
 }
 #nextButton {
     right: 20%;
+}
+
+#tryanother {
+  font-size: 1em;
+  letter-spacing: 0px;
 }
 
 button {
@@ -53,7 +58,7 @@ label, textarea {
     outline: none;
     display: block;
     position: absolute;
-    bottom: 20%;
+    bottom: 25%;
     background-color: #e8e8e8;
     color: gray;
     box-shadow: 0px 6px #a3a3a3;
@@ -171,7 +176,7 @@ li {
   }
   h4 {
     position: absolute;
-    top: 2%;
+    bottom: 14%;
   }
 }
 @media only screen and (max-width: 768px){
@@ -190,7 +195,7 @@ li {
 }
 @media only screen and (max-width: 400px){
   form, footer, h4 {
-    left: 12%;
+    left: 11%;
   }
   p, textarea, label {
     width: 300px;
@@ -202,7 +207,8 @@ li {
     font-size: 1.1em;
   }
   h4 {
-    top: 3%;
+    left: 22%;
+    bottom: 6%;
   }
   #backButton, #nextButton{
     bottom: 8%;

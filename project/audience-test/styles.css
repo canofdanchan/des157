@@ -92,6 +92,11 @@ header .button, article .button, li .button, section .button{
 #aboutpage h1 {
   color: #F7CC19;
 }
+#aboutpage h3 {
+  color: gray;
+  text-align: center;
+  font-size: 1em;
+}
 #resourcepage h1, #resourcepage section a, #resourcepage section a:visited {
   color: #A0ACD8;
 }

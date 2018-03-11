@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="styles.css">
     <style>
-      h3 {
+      h3, h4 {
         color: #FCC0C0;
       }
       #infoOverlay{
@@ -41,7 +41,6 @@
         </nav>
 
         <article id=form>
-            <h4 id=infoIcon> &#9432; What do i do?</h4>
             <form name="f">
                 <section id="b1full" class="hide">
                     <label for="b1"> 1. What is most important to build for you? </label>
@@ -72,7 +71,7 @@
                     <input id=submitButton class="button, hide" type="submit" value="I'M DONE!" />
                 </section>
             </form>
-
+            <h4 id=infoIcon> &#9432; Click for more info!</h4>
             <button id="backButton" type="button">&larr;</button>
             <button id="nextButton" type="button">&rarr;</button>
         </article>
@@ -89,7 +88,8 @@
         </article>
 
         <article id=results class="hide">
-            <button id=goback type="button"> GO BACK! </button>
+            <button id=goback type="button"> CHANGE ANSWERS! </button>
+            <div class=button id=tryanother> <a href="../index.html">TRY ANOTHER</a></div>
             <p id=answers> </p>
             <button class=icon> <i class="fa fa-envelope-o" aria-hidden="true"></i> </button>
             <button class=icon> <i class="fa fa-download" aria-hidden="true"></i> </button>
