@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Inconsolata, sans-serif;
+  letter-spacing: 1.3px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.bigDiv, .smolDiv {
+  margin: auto;
+}
+.bigDiv {
+  max-width: 800px;
+}
+.smolDiv{
+  max-width: 600px;
+}
+#resourcepage li {
+  margin-bottom: 3%;
+}
+#resourcepage li:last-child{
+  margin-bottom: 10%;
+}
+article {
+  float: left;
+  margin-top: 6%;
+}
+#lastSection {
+  margin-bottom: 15%;
+}
+#descrip {
+  width: 45%;
+}
+#options {
+  width: 55%;
+}
+nav {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+footer {
+  position: fixed;
+  bottom: 5%;
+  left: 38%;
+}
+footer a {
+  font-size: 1.5em;
+}
+footer span {
+  font-size: 0.6em;
+  color: lightgray;
+  opacity: 1;
+}
+/* button */
+button, .button {
+  font-family: Inconsolata;
+  background-color: #e8e8e8;
+  color: gray;
+  box-shadow: 0px 6px #a3a3a3;
+  border: none;
+}
+button {
+  outline: none;
+}
+header .button, article .button, li .button, section .button{
+  font-size: 1.3em;
+  display: inline;
+  border-radius: 5px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.button:hover, .button:active, button:hover, button:active{
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+.button:active, button:active {
+  box-shadow: 0px 3px #707070;
+  transform: translateY(3px);
+}
+#contact {
+  margin-left: auto;
+  margin-right: auto;
+}
+/*typography*/
+#homepage h1 {
+  color: #EFA5A5;
+}
+#aboutpage h1 {
+  color: #F7CC19;
+}
+#aboutpage h3 {
+  color: gray;
+  text-align: center;
+  font-size: 1em;
+}
+#resourcepage h1, #resourcepage section a, #resourcepage section a:visited {
+  color: #A0ACD8;
+}
+#resourcepage section a:hover {
+  color: gray;
+}
+h1 {
+  margin-top: 15%;
+  font-size: 2em;
+}
+h2 {
+  color: darkgray;
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+h1, h2 {
+  text-align: center;
+}
+p {
+  color: gray;
+  margin-bottom: 4%;
+  letter-spacing: 0.7px;
+  line-height: 1.2em;
+}
+li {
+  list-style: none;
+  margin-bottom: 8%;
+  font-size: 1em;
+  position: relative;
+}
+a, a:visited{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: gray;
+}
+.button a, .button a:visited, .button a:hover {
+  color: gray;
+}
+#home, #home:visited, #home:hover, #about, #about:visited, #about:hover, #resource, #resource:visited, #resource:hover{
+  font-weight: 700;
+  color: black;
+  text-decoration: underline;
+}
+/*animated*/
+span {
+  color: gray;
+  opacity: 0;
+  position: relative;
+  line-height: 2em;
+  letter-spacing: 0.7px;
+}
+/*animations*/
+@keyframes floatup {
+  from {bottom: -100px; opacity: 0;}
+  to {bottom: 0px; opacity: 1;}
+}
+.animateDescrip {
+  animation-name: floatup;
+  animation-duration: 2s;
+  opacity: 1;
+}
+/* media queries*/
+@media only screen and (max-width : 700px){
+  article {
+    float: none;
+    margin-bottom: 15%;
+  }
+  #descrip, #options {
+    width: 100%;
+  }
+  footer {
+    left: 10%;
+    bottom: 2%;
+  }
+  /*typography*/
+  h1 {
+    margin-top: 20%;
+    font-size: 1.5em;
+  }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/normalize.css@7.0.0/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      h3, h4 {
+        color: #FCC0C0;
+      }
+      #infoOverlay{
+        border-color: #FCC0C0;
+      }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js">
+    </script>
+        <script src="https://use.fontawesome.com/b46f3a58a7.js"></script>
+    <title> Build </title>
+</head>
+
+<body>
+    <div id=bigDiv>
+
+        <article>
+            <img id="housefl" src="images/house5.svg" alt="pink floor of birdhouse">
+            <img id="houseb" src="images/house4.svg" alt="pink back of birdhouse">
+            <img id="houses" src="images/house3.svg" alt="pink side of birdhouse">
+            <img id="houser" src="images/house1.svg" alt="pink rooftop of birdhouse">
+            <img id="housefr" src="images/house2.svg" alt="pink front of birdhouse">
+        </article>
+
+        <nav>
+            <a href="../index.html">HOME</a> |
+            <a href="../about.html">ABOUT</a> |
+            <a href="../resource.html">RESOURCES</a>
+        </nav>
+
+        <article id=form>
+            <form name="f">
+                <section id="b1full" class="hide">
+                    <label for="b1"> 1. What is most important to build for you? </label>
+                    <textarea name="b1" id="b1" rows="8" placeholder="type your answer here..."></textarea>
+                </section>
+
+                <section id="b2full" class="hide">
+                    <label for="b2"> 2. What tools do you build with? </label>
+                    <textarea name="b2" id="b2" rows="8" placeholder="type your answer here..."></textarea>
+                </section>
+
+                <section id="b3full" class="hide">
+                    <label for="b3"> 3. Why are you building these things? </label>
+                    <textarea name="b3" id="b3" rows="8" placeholder="type your answer here..."></textarea>
+                </section>
+
+                <section id="b4full" class="hide">
+                    <label for="b4"> 4. What do you still need to build? </label>
+                    <textarea name="b4" id="b4" rows="8" placeholder="type your answer here..."></textarea>
+                </section>
+
+                <section id="b5full" class="hide">
+                    <label for="b5"> Last question: What do you need help building? </label>
+                    <textarea name="b5" id="b5" rows="8" placeholder="type your answer here..."></textarea>
+                </section>
+
+                <section>
+                    <input id=submitButton class="button, hide" type="submit" value="I'M DONE!" />
+                </section>
+            </form>
+            <h4 id=infoIcon> &#9432; Click for more info!</h4>
+            <button id="backButton" type="button">&larr;</button>
+            <button id="nextButton" type="button">&rarr;</button>
+        </article>
+
+        <article id=infoOverlay>
+          <div id=close> &otimes; </div>
+          <ol>
+            <li>Answer each of these reflective questions! (how you interpret the question and whatever you write is up to you)</li>
+            <li>Click the next and back buttons to move in between questions</li>
+            <li>When you are finished answering all the questions click "I'm Done!" to see all your answers at once and get the option to email them to yourself <br><br> (note for audience testers: the emailing option isn't actually coded yet, but there are pretty buttons there for you to look at!!)</li>
+          </ol>
+
+          <p id="healing">Healing is a (non-linear) process, remember to stay kind to yourselves.</p>
+        </article>
+
+        <article id=results class="hide">
+            <button id=goback type="button"> CHANGE ANSWERS! </button>
+            <div class=button id=tryanother> <a href="../index.html">TRY ANOTHER</a></div>
+            <p id=answers> </p>
+            <button class=icon> <i class="fa fa-envelope-o" aria-hidden="true"></i> </button>
+            <button class=icon> <i class="fa fa-download" aria-hidden="true"></i> </button>
+        </article>
+
+        <footer>
+            <span> <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a> |
+      <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a> | <a href="https://www.w3schools.com/css/css3_animations.asp">CSS Animations</a></span>
+        </footer>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
