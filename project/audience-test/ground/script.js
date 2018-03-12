@@ -87,6 +87,9 @@ function next() {
         else if (index < allSmoke.length-1){
           nextButton.className="show";
         }
+        if (index < 0){
+          backButton.classname = "show";
+        }
     }
     console.log(index);
 }
@@ -103,6 +106,11 @@ function prev() {
     if (index < allSmoke.length-1){
       nextButton.className="show";
     }
+    if (index == 0){
+            backButton.className = "hide";
+        } else if (index > 0){
+          backButton.className = 'show';
+        }
   }
   console.log(index);
 }
