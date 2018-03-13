@@ -90,6 +90,7 @@ label, textarea {
 #close {
   font-size: 2em;
   color: gray;
+  cursor: pointer;
 }
 
 /*animated*/
@@ -150,6 +151,11 @@ li {
   font-size: 2em;
   margin-top: 5%;
   margin-right: 5%;
+}
+ol span {
+  font-size: 0.8em;
+  color: #cccccc;
+  letter-spacing: 0px;
 }
 
 /*media queries*/
