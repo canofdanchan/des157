@@ -12,7 +12,6 @@ div {
 #my-sketch {
   width: 800px;
   height: 250px;
-  /* border: solid #af87e7 3px; */
 }
 section {
   float: left;
@@ -88,6 +87,7 @@ ol, ul {
 li {
   margin-top: 3%;
   margin-bottom: 3%;
+  line-height: 1.8em;
 }
 li:last-child {
   margin-bottom: 10%;
