@@ -152,7 +152,7 @@ li {
   margin-top: 5%;
   margin-right: 5%;
 }
-ol span {
+ol span, h3 span {
   font-size: 0.8em;
   color: #cccccc;
   letter-spacing: 0px;
