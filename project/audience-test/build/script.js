@@ -34,6 +34,10 @@ var nextButton = document.getElementById("nextButton");
 // go back button
 var goback = document.getElementById("goback");
 
+// fetching email / download buttons
+var email = document.getElementById("email");
+var download = document.getElementById("download");
+
 var timerId;
 
 // create an array with all house elements: 0, 1, 2, 3
@@ -127,6 +131,10 @@ document.f.onsubmit = processForm;
 // function to go back to the questions and change your answers
 goback.addEventListener("click", gobackfunction);
 
+//function for email and download buttons
+email.addEventListener("click", alertmsg);
+download.addEventListener("click", alertmsg);
+
 function processForm() {
 
     form.className = "hide";
@@ -147,4 +155,8 @@ function gobackfunction() {
     form.className = "show";
     results.className = "hide";
     index = allHouse.length - 1;
+}
+
+function alertmsg() {
+  alert("this feature isn't ready yet! come back later");
 }
