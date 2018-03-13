@@ -9,17 +9,19 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="styles.css">
     <style>
-      h3, h4 {
-        color: #FCC0C0;
-      }
-      #infoOverlay{
-        border-color: #FCC0C0;
-      }
+        h3,
+        h4 {
+            color: #FCC0C0;
+        }
+
+        #infoOverlay {
+            border-color: #FCC0C0;
+        }
     </style>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js">
     </script>
-        <script src="https://use.fontawesome.com/b46f3a58a7.js"></script>
+    <script src="https://use.fontawesome.com/b46f3a58a7.js"></script>
     <title> Build </title>
 </head>
 
@@ -43,27 +45,30 @@
         <article id=form>
             <form name="f">
                 <section id="b1full" class="hide">
-                    <label for="b1"> 1. What is most important to build for you? </label>
+                    <label for="b1"> Name all that you are currently building. How are they doing?
+                    </label>
                     <textarea name="b1" id="b1" rows="8" placeholder="type your answer here..."></textarea>
                 </section>
 
                 <section id="b2full" class="hide">
-                    <label for="b2"> 2. What tools do you build with? </label>
+                    <label for="b2">What is the purpose behind what you are building? <br><span> *Remember to stay close to your truths.</span></label>
                     <textarea name="b2" id="b2" rows="8" placeholder="type your answer here..."></textarea>
                 </section>
 
                 <section id="b3full" class="hide">
-                    <label for="b3"> 3. Why are you building these things? </label>
+                    <label for="b3">How are you building towards healing, and away from harm?<br><span>What does healing and harm mean to you?</span></label>
                     <textarea name="b3" id="b3" rows="8" placeholder="type your answer here..."></textarea>
                 </section>
 
                 <section id="b4full" class="hide">
-                    <label for="b4"> 4. What do you still need to build? </label>
+                    <label for="b4"> What tools do you have to offer? <br> <span> Consider your strengths, what can you give?
+                    Consider the lessons you have learned, what can you teach?
+                    </span> </label>
                     <textarea name="b4" id="b4" rows="8" placeholder="type your answer here..."></textarea>
                 </section>
 
                 <section id="b5full" class="hide">
-                    <label for="b5"> Last question: What do you need help building? </label>
+                    <label for="b5">What do you still need to build?<br> <span> *Building is not an independent process, who or what can you ask to support you?</span> </label>
                     <textarea name="b5" id="b5" rows="8" placeholder="type your answer here..."></textarea>
                 </section>
 
@@ -77,22 +82,23 @@
         </article>
 
         <article id=infoOverlay>
-          <div id=close> &otimes; </div>
-          <ol>
-            <li>Answer each of these reflective questions! (how you interpret the question and whatever you write is up to you)</li>
-            <li>Click the next and back buttons to move in between questions</li>
-            <li>When you are finished answering all the questions click "I'm Done!" to see all your answers at once and get the option to email them to yourself <br><br> (note for audience testers: the emailing option isn't actually coded yet, but there are pretty buttons there for you to look at!!)</li>
-          </ol>
+            <div id=close> &otimes; </div>
+            <ol>
+                <li>Answer each of these reflective questions! (how you interpret the question and whatever you write is up to you) <br> <span> for audience testers: you don't have to answer these questions</span></li>
+                <li>Click the next and back buttons to move in between questions</li>
+                <li>When you are finished answering all the questions click "I'm Done!" to see all your answers at once and get the option to email them to yourself <br><br> (note: the emailing option isn't actually coded yet, but there
+                    are pretty buttons there for you to look at!!)</li>
+            </ol>
 
-          <p id="healing">Healing is a (non-linear) process, remember to stay kind to yourselves.</p>
+            <p id="healing">Healing is a (non-linear) process, remember to stay kind to yourselves.</p>
         </article>
 
         <article id=results class="hide">
             <button id=goback type="button"> CHANGE ANSWERS! </button>
             <div class=button id=tryanother> <a href="../index.html">TRY ANOTHER</a></div>
             <p id=answers> </p>
-            <button class=icon> <i class="fa fa-envelope-o" aria-hidden="true"></i> </button>
-            <button class=icon> <i class="fa fa-download" aria-hidden="true"></i> </button>
+            <button class=icon id=email> <i class="fa fa-envelope-o" aria-hidden="true"></i> </button>
+            <button class=icon id=download> <i class="fa fa-download" aria-hidden="true"></i> </button>
         </article>
 
         <footer>

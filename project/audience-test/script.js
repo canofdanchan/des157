@@ -37,3 +37,17 @@ function gShowDescrip (){
   console.log('animating');
   gDescrip.className = "animateDescrip";
 }
+
+// ********DELETE AFTER AUDIENCE TESTING IS DONE*************
+// fetching overlay elements
+var infoIcon = document.getElementById('infoIcon')
+var testOverlay = document.getElementById("testOverlay");
+var close = document.getElementById("close");
+
+// overlay functions
+infoIcon.addEventListener("click", function() {
+    testOverlay.style.display = "block";
+});
+close.addEventListener("click", function() {
+    testOverlay.style.display = "none";
+})
