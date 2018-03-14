@@ -23,7 +23,12 @@ var submitButton = document.getElementById("submitButton");
 // fetching overlay elements
 var infoIcon = document.getElementById('infoIcon')
 var infoOverlay = document.getElementById("infoOverlay");
-var close = document.getElementById("close");
+var infoClose = document.getElementById("infoClose");
+
+var viewintro = document.getElementById("viewintro")
+var introOverlay = document.getElementById("introOverlay");
+var startNclose = document.getElementById("startNclose");
+var all = document.getElementById("all");
 
 //fetching buttons
 var backButton = document.getElementById("backButton");
@@ -48,11 +53,21 @@ var allQuestion = [h1full, h2full, h3full, h4full];
 var index = 0;
 
 // overlay functions
+//info
 infoIcon.addEventListener("click", function() {
     infoOverlay.style.display = "block";
 });
-close.addEventListener("click", function() {
+infoClose.addEventListener("click", function() {
     infoOverlay.style.display = "none";
+})
+//intro
+viewintro.addEventListener("click", function() {
+    introOverlay.style.display = "block";
+    all.style.display = "none";
+});
+startNclose.addEventListener("click", function() {
+    introOverlay.style.display = "none";
+    all.style.display = "block";
 })
 
 // roof appears when the window loads

@@ -160,7 +160,7 @@ function processForm() {
     var b4 = document.f.b4.value;
     var b5 = document.f.b5.value;
 
-    answers.innerHTML = "</h2><h3>Name all that you are currently building. How are they doing?</h3><p>" + b1 + "</p><h3> What is the purpose behind what you are building?</h3><p>" + b2 + "</p><h3>How are you building towards healing, and away from harm?</h3><p>" + b3 + "</p><h3>What tools do you have to offer?</h3><p>" + b4 + "</p><h3>What do you still need to build?<br><span>*Building is not an independent process, who or what can you ask to support you?</span></h3>" + b5;
+    answers.innerHTML = "</h2><h3>Name everything that you are currently building. How are they doing?</h3><p>" + b1 + "</p><h3> What is the purpose behind what you are building?</h3><p>" + b2 + "</p><h3>How are you building towards healing, and away from harm?</h3><p>" + b3 + "</p><h3>What tools do you have to offer?<br><span>What can you give & what can you teach?</span></h3><p>" + b4 + "</p><h3>What do you still need to build?<br><span>Building is not an independent process. Consider the forms of support you have.</span></h3>" + b5;
 
     results.className = "show";
     return false;

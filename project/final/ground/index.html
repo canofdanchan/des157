@@ -9,28 +9,66 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../build/styles.css">
     <style>
-      h3, h4 {
-        color: #A0ACD8;
-      }
-      #infoOverlay {
-        border-color: #A0ACD8;
-      }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        header p,
+        p span {
+            color: #A0ACD8;
+        }
+
+        hr {
+            border: 0;
+            border-top: 2px solid #A0ACD8;
+        }
+
+        #infoOverlay {
+            border-color: #A0ACD8;
+        }
     </style>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js">
     </script>
-        <script src="https://use.fontawesome.com/b46f3a58a7.js"></script>
+    <script src="https://use.fontawesome.com/b46f3a58a7.js"></script>
     <title> Ground </title>
 </head>
 
 <body>
-    <div id=bigDiv>
+  <div id=introOverlay>
+    <div class=smollestDiv>
+        <header>
+            <h1> GROUND </h1>
+            <h2> /ground/ | verb </h2>
+            <p>give (something abstract) a firm theoretical or practical basis</p>
+        </header>
+        <hr>
+        <section>
+            <p>This activity will be prompting you with questions revolving around the word “ground”. Consider <span>conceptual</span>, rather than literal meanings</p>
+            <p><span>examples can include:</span>(your) mind, soul, spirituality, self-worth, in tenderness, in softness, in compassion, in community</p>
+            <p id=note>*Note: your answers do not have to revolve around any of these, they are simply here to guide you into thinking deeper about what “ground” can mean to you.</p>
+        </section>
+        <section>
+            <h5>Creator's Interpretation</h5>
+            <p> To ground something is to give it roots so that it can flourish, so that it can grow to reach its full potential. Grounding requires compassion, patience, and a soft push away from shame or other negative cycles. </p>
+        </section>
+        <section>
+            <hr>
+        </section>
+        <div class=button id=startNclose>START GROUNDING</div>
+    </div>
+    </div>
+
+    <div id=all>
 
         <article>
-          <img id="smoke2" src="images/smoke2.svg" alt="incense with medium smoke">
-          <img id="smoke3" src="images/smoke3.svg" alt="incense with big smoke">
+            <img id="smoke2" src="images/smoke2.svg" alt="incense with medium smoke">
+            <img id="smoke3" src="images/smoke3.svg" alt="incense with big smoke">
             <img id="smoke1" src="images/smoke1.svg" alt="incense with smol smoke">
         </article>
+
+        <h4 id=viewintro> &lt; BACK TO INTRO </h4>
 
         <nav>
             <a href="../index.html">HOME</a> |
@@ -39,10 +77,10 @@
         </nav>
 
         <article id=form>
-          <h4 id=infoIcon> &#9432; Click for instructions!</h4>
+            <h4 id=infoIcon> &#9432; Click for instructions!</h4>
             <form name="f">
                 <section id="s1full" class="hide">
-                    <label for="s1"> Are you allowing for your whole self to be present with you? What is preventing you?  </label>
+                    <label for="s1"> Are you allowing for your whole self to be present with you? If not, what is preventing you?  </label>
                     <textarea name="s1" id="s1" rows="8" placeholder="type your answer here..."></textarea>
                 </section>
 
@@ -52,7 +90,7 @@
                 </section>
 
                 <section id="s3full" class="hide">
-                    <label for="s3"> What tools do you use to feel connected to yourself? your communities? </label>
+                    <label for="s3"> What tools do you use to feel connected to yourself? Your communities? </label>
                     <textarea name="s3" id="s3" rows="8" placeholder="type your answer here..."></textarea>
                 </section>
 
@@ -65,15 +103,16 @@
         </article>
 
         <article id=infoOverlay>
-          <div id=close> &otimes; </div>
-          <h3> Instructions! </h3>
-          <ol>
-            <li>Answer each of these reflective questions! (how you interpret the question and whatever you write is up to you)</li>
-            <li>Click the next and back buttons to move in between questions</li>
-            <li>When you are finished answering all the questions click "I'm Done!" to see all your answers at once and get the option to email them to yourself <br><br> (note for audience testers: the emailing option isn't actually coded yet, but there are pretty buttons there for you to look at!!)</li>
-          </ol>
+            <div id=infoClose> &otimes; </div>
+            <h3> Instructions! </h3>
+            <ol>
+                <li>Answer each of these reflective questions! (how you interpret the question and whatever you write is up to you)</li>
+                <li>Click the next and back buttons to move in between questions</li>
+                <li>When you are finished answering all the questions click "I'm Done!" to see all your answers at once and get the option to email them to yourself <br><br> (note for audience testers: the emailing option isn't actually coded yet, but there
+                    are pretty buttons there for you to look at!!)</li>
+            </ol>
 
-          <p id="healing">Healing is a (non-linear) process, remember to stay kind to yourselves.</p>
+            <p id="healing">Healing is a (non-linear) process, remember to stay kind to yourselves.</p>
         </article>
 
         <article id=results class="hide">

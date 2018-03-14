@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../build/styles.css">
     <style>
-      h3, h4 {
+      h1, h2, h3, h4, h5, header p, p span {
         color: #F7CC19;
       }
+      hr {
+          border: 0;
+          border-top: 2px solid #F7CC19;
+        }
       #infoOverlay {
         border-color: #F7CC19;
       }
@@ -24,7 +28,31 @@
 </head>
 
 <body>
-    <div id=bigDiv>
+  <div id=introOverlay>
+  <div class=smollestDiv>
+  <header>
+    <h1> HOLD </h1>
+    <h2> /h&#x014D;ld/ | verb </h2>
+    <p>be able to bear (the weight of a person or thing)</p>
+  </header>
+    <hr>
+    <section>
+    <p>This activity will be prompting you with questions revolving around the word “hold”. Consider <span>conceptual</span>, rather than literal meanings</p>
+    <p><span>examples can include:</span> thoughts, feelings, resentment, grief, space, people, flaws, narratives, trauma </p>
+    <p id=note>*Note: your answers do not have to revolve around any of these, they are simply here to guide you into thinking deeper about what “hold” can mean to you.</p>
+  </section>
+    <section>
+    <h5>Creator's Interpretation</h5>
+    <p> To hold something is to gently see that thing in its entirety, to face its flaws with compassion while acknowledging the potential it has.</p>
+  </section>
+  <section>
+    <hr>
+    </section>
+  <div class=button id=startNclose>START HOLDING</div>
+</div>
+</div>
+
+    <div id=all>
 
         <article>
           <img id="hold1" src="images/hold1.svg" alt="brown hand with yellow bandaid holding one flower">
@@ -32,6 +60,8 @@
           <img id="hold3" src="images/hold3.svg" alt="brown hand with yellow bandaid holding three flowers">
           <img id="hold4" src="images/hold4.svg" alt="brown hand with yellow bandaid holding four flowers">
         </article>
+
+        <h4 id=viewintro> &lt; BACK TO INTRO </h4>
 
         <nav>
             <a href="../index.html">HOME</a> |
@@ -71,7 +101,7 @@
         </article>
 
         <article id=infoOverlay>
-          <div id=close> &otimes; </div>
+          <div id=infoClose> &otimes; </div>
           <h3> Instructions! </h3>
           <ol>
             <li>Answer each of these reflective questions! (how you interpret the question and whatever you write is up to you)</li>

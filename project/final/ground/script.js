@@ -21,7 +21,12 @@ var submitButton = document.getElementById("submitButton");
 // fetching overlay elements
 var infoIcon = document.getElementById('infoIcon')
 var infoOverlay = document.getElementById("infoOverlay");
-var close = document.getElementById("close");
+var infoClose = document.getElementById("infoClose");
+
+var viewintro = document.getElementById("viewintro")
+var introOverlay = document.getElementById("introOverlay");
+var startNclose = document.getElementById("startNclose");
+var all = document.getElementById("all");
 
 //fetching buttons
 var backButton = document.getElementById("backButton");
@@ -46,11 +51,21 @@ var allQuestion = [s1full, s2full, s3full];
 var index = 0;
 
 // overlay functions
-infoIcon.addEventListener ("click", function(){
-  infoOverlay.style.display="block";
+//info
+infoIcon.addEventListener("click", function() {
+    infoOverlay.style.display = "block";
 });
-close.addEventListener("click", function(){
-  infoOverlay.style.display="none";
+infoClose.addEventListener("click", function() {
+    infoOverlay.style.display = "none";
+})
+//intro
+viewintro.addEventListener("click", function() {
+    introOverlay.style.display = "block";
+    all.style.display = "none";
+});
+startNclose.addEventListener("click", function() {
+    introOverlay.style.display = "none";
+    all.style.display = "block";
 })
 
 // roof appears when the window loads
@@ -140,7 +155,7 @@ function processForm() {
   var s2 = document.f.s2.value;
   var s3 = document.f.s3.value;
 
-  answers.innerHTML = "<h3>Are you allowing for your whole self to be present with you? What is preventing you? </h3><p>" + s1 + "</p><h3> How do you foster a sense of tenderness & softness within yourself?</h3><p>" + s2 + "</p><h3>What tools do you use to feel connected to yourself? your communities?</h3><p>" + s3;
+  answers.innerHTML = "<h3>Are you allowing for your whole self to be present with you? If not, what is preventing you? </h3><p>" + s1 + "</p><h3> How do you foster a sense of tenderness & softness within yourself?</h3><p>" + s2 + "</p><h3>What tools do you use to feel connected to yourself? Your communities?</h3><p>" + s3;
 
   results.className="show";
   return false;
