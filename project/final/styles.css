@@ -64,7 +64,7 @@ button, .button {
 button {
   outline: none;
 }
-header .button, article .button, li .button, section .button{
+article .button, li .button, section .button{
   font-size: 1.3em;
   display: inline;
   border-radius: 5px;
@@ -103,6 +103,9 @@ header .button, article .button, li .button, section .button{
 #resourcepage section a:hover {
   color: gray;
 }
+#resourcepage ul li {
+  list-style: circle;
+}
 h1 {
   margin-top: 15%;
   font-size: 2em;
@@ -116,7 +119,7 @@ h2 {
   font-size: 1.5em;
   margin-bottom: 0;
 }
-h1, h2 {
+h1 {
   text-align: center;
 }
 p {
@@ -156,12 +159,12 @@ ul span {
 }
 /*animations*/
 @keyframes floatup {
-  from {bottom: -100px; opacity: 0;}
+  from {bottom: -50px; opacity: 0;}
   to {bottom: 0px; opacity: 1;}
 }
 .animateDescrip {
   animation-name: floatup;
-  animation-duration: 2s;
+  animation-duration: 1.6s;
   opacity: 1;
 }
 /********** media queries************/
@@ -183,5 +186,3 @@ ul span {
     font-size: 1.5em;
   }
 }
-/******* DELETE AFTER AUDIENCE TESTING IS DONE ******/
-/******* for overlay *********/

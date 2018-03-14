@@ -25,7 +25,12 @@ var submitButton = document.getElementById("submitButton");
 // fetching overlay elements
 var infoIcon = document.getElementById('infoIcon')
 var infoOverlay = document.getElementById("infoOverlay");
-var close = document.getElementById("close");
+var infoClose = document.getElementById("infoClose");
+
+var viewintro = document.getElementById("viewintro")
+var introOverlay = document.getElementById("introOverlay");
+var startNclose = document.getElementById("startNclose");
+var all = document.getElementById("all");
 
 //fetching buttons
 var backButton = document.getElementById("backButton");
@@ -33,6 +38,10 @@ var nextButton = document.getElementById("nextButton");
 
 // go back button
 var goback = document.getElementById("goback");
+
+// fetching email / download buttons
+var email = document.getElementById("email");
+var download = document.getElementById("download");
 
 var timerId;
 
@@ -46,11 +55,21 @@ var allQuestion = [b1full, b2full, b3full, b4full, b5full];
 var index = 0;
 
 // overlay functions
+//info
 infoIcon.addEventListener("click", function() {
     infoOverlay.style.display = "block";
 });
-close.addEventListener("click", function() {
+infoClose.addEventListener("click", function() {
     infoOverlay.style.display = "none";
+})
+//intro
+viewintro.addEventListener("click", function() {
+    introOverlay.style.display = "block";
+    all.style.display = "none";
+});
+startNclose.addEventListener("click", function() {
+    introOverlay.style.display = "none";
+    all.style.display = "block";
 })
 
 // roof appears when the window loads
@@ -127,6 +146,10 @@ document.f.onsubmit = processForm;
 // function to go back to the questions and change your answers
 goback.addEventListener("click", gobackfunction);
 
+//function for email and download buttons
+email.addEventListener("click", alertmsg);
+download.addEventListener("click", alertmsg);
+
 function processForm() {
 
     form.className = "hide";
@@ -137,7 +160,7 @@ function processForm() {
     var b4 = document.f.b4.value;
     var b5 = document.f.b5.value;
 
-    answers.innerHTML = "<h3>What is most important to build for you?</h3><p>" + b1 + "</p><h3> What tools do you build with?</h3><p>" + b2 + "</p><h3>Why are you building these things?</h3><p>" + b3 + "</p><h3>What do you still need to build?</h3><p>" + b4 + "</p><h3>What do you need help building?</h3>" + b5;
+    answers.innerHTML = "</h2><h3>Name all that you are currently building. How are they doing?</h3><p>" + b1 + "</p><h3> What is the purpose behind what you are building?</h3><p>" + b2 + "</p><h3>How are you building towards healing, and away from harm?</h3><p>" + b3 + "</p><h3>What tools do you have to offer?</h3><p>" + b4 + "</p><h3>What do you still need to build?<br><span>*Building is not an independent process, who or what can you ask to support you?</span></h3>" + b5;
 
     results.className = "show";
     return false;
@@ -147,4 +170,8 @@ function gobackfunction() {
     form.className = "show";
     results.className = "hide";
     index = allHouse.length - 1;
+}
+
+function alertmsg() {
+  alert("this feature isn't ready yet! come back later");
 }

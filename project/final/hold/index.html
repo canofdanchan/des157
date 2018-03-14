@@ -40,6 +40,7 @@
         </nav>
 
         <article id=form>
+          <h4 id=infoIcon> &#9432; Click for instructions!</h4>
             <form name="f">
                 <section id="h1full" class="hide">
                     <label for="h1"> What do you hold close to you?  </label>
@@ -57,7 +58,7 @@
                 </section>
 
                 <section id="h4full" class="hide">
-                    <label for="h4"> How do you hold space for yourself? how do you hold space for others? </label>
+                    <label for="h4"> How do you hold space for yourself? How do you hold space for others? </label>
                     <textarea name="h4" id="h4" rows="8" placeholder="type your answer here..."></textarea>
                 </section>
 
@@ -65,13 +66,13 @@
                     <input id=submitButton class="button, hide" type="submit" value="I'M DONE!" />
                 </section>
             </form>
-            <h4 id=infoIcon> &#9432; Click for more info!</h4>
             <button id="backButton" type="button">&larr;</button>
             <button id="nextButton" type="button">&rarr;</button>
         </article>
 
         <article id=infoOverlay>
           <div id=close> &otimes; </div>
+          <h3> Instructions! </h3>
           <ol>
             <li>Answer each of these reflective questions! (how you interpret the question and whatever you write is up to you)</li>
             <li>Click the next and back buttons to move in between questions</li>
@@ -85,8 +86,8 @@
             <button id=goback type="button"> CHANGE ANSWERS! </button>
             <div class=button id=tryanother> <a href="../index.html">TRY ANOTHER</a></div>
             <p id=answers> </p>
-            <button class=icon> <i class="fa fa-envelope-o" aria-hidden="true"></i> </button>
-            <button class=icon> <i class="fa fa-download" aria-hidden="true"></i> </button>
+            <button class=icon id=email> <i class="fa fa-envelope-o" aria-hidden="true"></i> </button>
+            <button class=icon id=download> <i class="fa fa-download" aria-hidden="true"></i> </button>
         </article>
 
         <footer>

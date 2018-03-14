@@ -30,6 +30,10 @@ var nextButton = document.getElementById("nextButton");
 // go back button
 var goback = document.getElementById("goback");
 
+// fetching email / download buttons
+var email = document.getElementById("email");
+var download = document.getElementById("download");
+
 var timerId;
 
 // create an array with all house elements: 0, 1, 2, 3
@@ -124,6 +128,10 @@ document.f.onsubmit = processForm;
 // function to go back to the questions and change your answers
 goback.addEventListener("click", gobackfunction);
 
+//function for email and download buttons
+email.addEventListener("click", alertmsg);
+download.addEventListener("click", alertmsg);
+
 function processForm() {
 
   form.className="hide";
@@ -132,7 +140,7 @@ function processForm() {
   var s2 = document.f.s2.value;
   var s3 = document.f.s3.value;
 
-  answers.innerHTML = "<h3>Do you allow for your whole self to be present with you?</h3><p>" + s1 + "</p><h3> How do you (re)generate a sense of safety for yourself?</h3><p>" + s2 + "</p><h3>What tools do you use to feel connected to yourself? your communities?</h3><p>" + s3;
+  answers.innerHTML = "<h3>Are you allowing for your whole self to be present with you? What is preventing you? </h3><p>" + s1 + "</p><h3> How do you foster a sense of tenderness & softness within yourself?</h3><p>" + s2 + "</p><h3>What tools do you use to feel connected to yourself? your communities?</h3><p>" + s3;
 
   results.className="show";
   return false;
@@ -142,4 +150,8 @@ function gobackfunction() {
     form.className="show";
     results.className="hide";
     index=allSmoke.length-1;
+}
+
+function alertmsg() {
+  alert("this feature isn't ready yet! come back later");
 }
