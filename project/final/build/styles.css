@@ -70,6 +70,9 @@ textarea {
 label, textarea {
     width: 430px;
 }
+footer {
+  left: 10%;
+}
 
 /*this class is specifically for the "submit" button*/
 
@@ -215,8 +218,12 @@ li {
 .icon {
   font-weight: 700;
   font-size: 2em;
-  margin-top: 3%;
+  margin-top: 2%;
   margin-right: 5%;
+  margin-bottom: 2%;
+}
+.actionitem {
+  font-size: 0.8em;
 }
 ol span, h3 span, label span {
   font-size: 0.8em;
@@ -280,7 +287,7 @@ ol span, h3 span, label span {
   form, footer, #infoIcon {
     left: 11%;
   }
-  p, textarea, label {
+  p, textarea, label, #results {
     width: 300px;
   }
   form, #results {
